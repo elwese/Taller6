@@ -1,9 +1,9 @@
 public class EmpleadoTemporario extends Empleado {
-    private String nombre;
-    private String genero;
-    private double salarioBase;
-    private int horasTrabajadas;
-    private String departamento;
+    //nombre existe en Empleado
+    //genero fue subido (pull up atribute)
+    //salario existe en Empleado
+    // horasTrabajadas existe en Empleado
+    //departamento existe en empleado
     private int mesesContrato;
 
     public EmpleadoTemporario(String nombre, double salarioBase, int horasTrabajadas, String departamento, int mesesContrato, String genero) {
@@ -14,15 +14,8 @@ public class EmpleadoTemporario extends Empleado {
         this.mesesContrato = mesesContrato;
         this.genero = genero;
     }
-
-    public void imprimirDetalles() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Genero: " + super.getNombre());
-        System.out.println("Salario: " + salarioBase);
-        System.out.println("Horas trabajadas: " + horasTrabajadas);
-        System.out.println("Departamento: " + departamento);
-        System.out.println("Meses de contrato: " + mesesContrato);
-    }
+    
+    //imprimir detalles fue movido para Empleado (pull up method)
 
     // Más metodos
 }
