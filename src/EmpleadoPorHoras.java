@@ -13,6 +13,11 @@ public class EmpleadoPorHoras extends Empleado {
         return super.getHorasTrabajadas() * super.getTarifaHora();;
     }
 
+    @Override
+    public void imprimirDetalles() {
+        System.out.println("");
+    }
+
     //imprimir detalles fue movido para Empleado (pull up method)
     // Más metodos
 }

@@ -10,7 +10,12 @@ public class EmpleadoTemporario extends Empleado {
         super(nombre, salarioBase, horasTrabajadas, 0, departamento)
         this.mesesContrato = mesesContrato;
     }
-    
+
+    @Override
+    public abstract void imprimirDetalles() {
+        System.out.println("Meses de contrato: " + mesesContrato);
+    }
+
     //imprimir detalles fue movido para Empleado (pull up method)
 
     // Más metodos
