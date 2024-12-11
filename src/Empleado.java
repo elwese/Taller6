@@ -17,14 +17,7 @@ public abstract class Empleado {
         this.departamento = departamento;
     }
 
-    public abstract void imprimirDetalles() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Genero: " + genero);
-        System.out.println("Salario: " + salarioBase);
-        System.out.println("Horas trabajadas: " + horasTrabajadas);
-        System.out.println("Departamento: " + departamento);
-    }
-
+    public abstract void imprimirDetalles(); 
 
     public double calcularSalario() {
         validarValores();
