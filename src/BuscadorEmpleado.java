@@ -10,5 +10,9 @@ public class BuscadorEmpleado {
         return null;
     }
 
+    //Pull Up Method
+    //En el caso del método imprimirDetalles, cada subclase (EmpleadoFijo, EmpleadoPorHoras, EmpleadoTemporario) tenía una versión similar del método. 
+    //Este se movió a la clase base Empleado, ya que gran parte de la lógica era común entre las subclases.
+
     // Más metodos
 }
